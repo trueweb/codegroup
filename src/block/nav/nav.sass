@@ -1,0 +1,89 @@
+.nav_header
+	@media #{$phone}
+		position: absolute
+		top: 0
+		right: 0
+		width: 100%
+		z-index: 1000
+		&.active
+			.nav
+				&__list
+					display: flex
+					flex-wrap: wrap
+					background-color: rgba(255, 255, 255, .8)
+					padding: 15px 0
+					&-item
+						width: 100%
+						text-align: center
+						padding-top: 20px
+
+	.nav
+		&__list
+			width: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+			@media #{$phone}
+				display: none
+			&-item
+				font-weight: 500
+				display: flex
+				align-items: center
+				@media #{$phone}
+					justify-content: center
+
+			&-link
+				display: inline-block
+				color: #000
+				padding: 0 15px
+				line-height: 1
+
+.nav_sidebar-left
+	color: $corp-2
+	.nav
+		&__list
+			width: 100%
+			// Скрыть меню
+			.nav
+				&__list
+					display: none
+			&-icon
+				margin-right: 10px
+				cursor: pointer
+				&_title
+					margin-right: 5px
+			&-item
+				margin-bottom: 10px
+				display: flex
+				align-items: center
+				justify-content: space-between
+				flex-wrap: wrap
+				&_title
+					display: flex
+					span
+						cursor: pointer
+				&.active
+					color: #fff
+					// Показать меню
+				&.active > .nav__list
+					margin-top: 10px
+					display: block
+				&.active > .nav__list-link
+					color: #fff
+			&-count
+				font-size: 12px
+				border: 1px solid $corp-2
+				border-radius: 50%
+				display: flex
+				justify-content: center
+				align-items: center
+				height: 20px
+				width: 20px
+			&-link
+				display: inline-block
+				padding: 5px
+				color: $corp-2
+				&:visited
+					color: $corp-2
+				&:hover
+					color: #fff

@@ -1,0 +1,96 @@
+mixin b-sidebar_left()
+	+b.sidebar_left
+		+b.nav_sidebar-left
+			+e.UL.list
+				+e.LI.list-item_title.active
+					SPAN Задачи
+					+e.I.list-icon_title.fa.fa-angle-down
+					+e.UL.list
+
+						+e.LI.list-item.active
+							+e.A(href="#").list-link
+								+e.I.list-icon.fa.fa-list
+								SPAN Список задач
+							+e.SPAN.list-count 5
+
+						+e.LI.list-item
+							+e.A(href="#").list-link
+								+e.I.list-icon.fa.fa-pencil-square-o
+								SPAN Добавить задачу
+
+						+e.LI.list-item
+							+e.A(href="#").list-link
+								+e.I.list-icon.fa.fa-envelope-o
+								SPAN Написать сообщение
+
+						+e.LI.list-item
+							+e.A(href="#").list-link
+								+e.I.list-icon.fa.fa-folder-o
+								SPAN Архив выполненных
+
+				+e.LI.list-item_title
+					SPAN Рейтинг
+					+e.I.list-icon_title.fa.fa-angle-down
+
+
+mixin b-sidebar_right()
+	+b.sidebar_right
+		+b.tickets_sidebar-right
+			+e.list
+				+e.list-item.active
+					+e.list-col_1
+						+e.list-box-img
+							+e.IMG(src="img/avatar-2.png").company-img
+					+e.list-col_2
+						+e.list-row_1
+							+e.list-name Филогенез
+						+e.list-row_2
+							+e.list-text Синтез искусств
+
+				+e.list-item
+					+e.list-col_1
+						+e.list-box-img
+							+e.IMG(src="img/avatar-1.png").company-img
+					+e.list-col_2
+						+e.list-row_1
+							+e.list-name Филогенез
+						+e.list-row_2
+							+e.list-text Синтез искусств
+					+e.list-col_3
+						+e.list-count 10
+
+				+e.list-item
+					+e.list-col_1
+						+e.list-box-img
+							+e.IMG(src="img/avatar-3.png").company-img
+					+e.list-col_2
+						+e.list-row_1
+							+e.list-name Континуальность
+						+e.list-row_2
+							+e.list-text Художественный процес
+					+e.list-col_3
+						+e.list-count 39
+
+				+e.list-item
+					+e.list-col_1
+						+e.list-box-img
+							+e.IMG(src="img/avatar-4.png").company-img
+					+e.list-col_2
+						+e.list-row_1
+							+e.list-name Филогенез
+						+e.list-row_2
+							+e.list-text Синтез искусств
+					+e.list-col_3
+						+e.list-count 11
+
+				+e.list-item
+					+e.list-col_1
+						+e.list-box-img
+							+e.IMG(src="img/avatar-5.png").company-img
+					+e.list-col_2
+						+e.list-row_1
+							+e.list-name Филогенез
+						+e.list-row_2
+							+e.list-text Синтез искусств
+					+e.list-col_3
+						+e.list-count 10

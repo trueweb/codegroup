@@ -1,0 +1,134 @@
+extends ../layout/root
+block title 
+	title Doc title
+block meta_k 
+	meta(name="keywords" content="meta_k .........text")
+block meta_d 
+	meta(name="description" content="meta_d ......text")
+
+block main
+	+b.MAIN.main_home
+		.container
+			+e.row
+				+e.col_sidebar-left
+					+b-sidebar_left()
+
+				+e.col_content
+					+b.list-tickets
+						//- +e.title Список тикетов
+						//- +e.row_header
+						//- 	+e.col_time
+						//- 		+e.col-name Время
+						//- 	+e.col_type
+						//- 		+e.col-name Тип, технологии
+						//- 	+e.col_name
+						//- 		+e.col-name Название тикета
+						//- 	+e.col_conditions
+						//- 		+e.col-name Условия
+						//- 	+e.col_view
+						//- 		+e.col-name Просмотр
+						//- +e.UL.list(id="list-tickets__list")
+						//- 	+e.list-item(data-id="1")
+						//- 		+e.list-item-col_1
+						//- 			+e.time 21:15 <br> 7 августа
+						//- 		+e.list-item-col_2
+						//- 			+e.type Под воздействием переменног
+						//- 			+e.ticket
+						//- 				+e.ticket-box-img
+						//- 					+e.IMG(src="img/avatar-1.png").ticket-img
+						//- 				+e.ticket-box-text
+						//- 					+e.ticket-text_name Самосогласованная модель
+						//- 					+e.ticket-text_user Кристина Малышева
+						//- 			+e.conditions Ударная волнаскалярна.
+
+						//- 			+e.text Поток, в рамках ограничений классической механики, трансформирует тахионный луч. Плазменное образование испускает экранированный кварк. Фотон когерентно индуцирует осциллятор. Зеркало выталкивает фонон почти так же, как в резонаторе газового лазера. В самом общем случае вещество переворачивает фронт.
+
+						//- 		+e.list-item-col_3
+						//- 			+e.A(href="#").btn_go-to.btn_regular Перейти
+						+e.title Список тикетов
+						+e.row_header
+							+e.col_time
+								+e.col-name Время
+							+e.col_type
+								+e.col-name Тип, технологии
+							+e.col_ticket
+								+e.col-name Название тикета
+							+e.col_conditions
+								+e.col-name Условия
+							+e.col_view
+								+e.col-name Просмотр
+
+						+e.list(id="list-tickets__list")
+							//- +e.list-item(data-id="1")
+							//- 	+e.col_time
+							//- 		+e.time 21:15 <br> 7 августа
+							//- 	+e.list-item-box_center
+							//- 		+e.list-item-box-row_1
+							//- 			+e.list-item-col_type
+							//- 				+e.type Под воздействием переменног
+							//- 			+e.list-item-col_ticket
+							//- 				+e.ticket
+							//- 					+e.ticket-box-img
+							//- 						+e.IMG(src="img/avatar-1.png").ticket-img
+							//- 					+e.ticket-box-text
+							//- 						+e.ticket-text_name Самосогласованная модель
+							//- 						+e.ticket-text_user Кристина Малышева
+							//- 			+e.list-item-col_conditions
+							//- 				+e.conditions Ударная волна скалярна.
+							//- 		+e.list-item-box-row_2
+							//- 			+e.list-item-col_text
+							//- 				+e.text Поток, в рамках ограничений классической механики, трансформирует тахионный луч. Плазменное образование испускает экранированный кварк. Фотон когерентно индуцирует осциллятор. Зеркало выталкивает фонон почти так же, как в резонаторе газового лазера. В самом общем случае вещество переворачивает фронт.
+
+							//- 	+e.list-item-col_view
+							//- 		+e.A(href="#").btn_go-to.btn_regular Перейти
+
+
+							//- +e.list-item(data-id="2")
+							//- 	+e.col_time
+							//- 		+e.time 21:15 <br> 7 августа
+							//- 	+e.list-item-box_center
+							//- 		+e.list-item-box-row_1
+							//- 			+e.list-item-col_type
+							//- 				+e.type Под воздействием переменног
+							//- 			+e.list-item-col_ticket
+							//- 				+e.ticket
+							//- 					+e.ticket-box-img
+							//- 						+e.IMG(src="img/avatar-1.png").ticket-img
+							//- 					+e.ticket-box-text
+							//- 						+e.ticket-text_name Самосогласованная модель
+							//- 						+e.ticket-text_user Кристина Малышева
+							//- 			+e.list-item-col_conditions
+							//- 				+e.conditions Ударная волна скалярна.
+							//- 		+e.list-item-box-row_2
+							//- 			+e.list-item-col_text
+							//- 				+e.text Поток, в рамках ограничений классической механики, трансформирует тахионный луч. Плазменное образование испускает экранированный кварк. Фотон когерентно индуцирует осциллятор. Зеркало выталкивает фонон почти так же, как в резонаторе газового лазера. В самом общем случае вещество переворачивает фронт.
+
+							//- 	+e.list-item-col_view
+							//- 		+e.A(href="#").btn_go-to.btn_regular Перейти
+
+
+							//- +e.list-item_disabled(data-id="3")
+							//- 	+e.col_time
+							//- 		+e.time 21:15 <br> 7 августа
+							//- 	+e.list-item-box_center
+							//- 		+e.list-item-box-row_1
+							//- 			+e.list-item-col_type
+							//- 				+e.type Под воздействием переменног
+							//- 			+e.list-item-col_ticket
+							//- 				+e.ticket
+							//- 					+e.ticket-box-img
+							//- 						+e.IMG(src="img/avatar-1.png").ticket-img
+							//- 					+e.ticket-box-text
+							//- 						+e.ticket-text_name Самосогласованная модель
+							//- 						+e.ticket-text_user Кристина Малышева
+							//- 			+e.list-item-col_conditions
+							//- 				+e.conditions Ударная волна скалярна.
+							//- 		+e.list-item-box-row_2
+							//- 			+e.list-item-col_text
+							//- 				+e.text Поток, в рамках ограничений классической механики, трансформирует тахионный луч. Плазменное образование испускает экранированный кварк. Фотон когерентно индуцирует осциллятор. Зеркало выталкивает фонон почти так же, как в резонаторе газового лазера. В самом общем случае вещество переворачивает фронт.
+
+							//- 	+e.list-item-col_view
+							//- 		+e.A(href="#").btn_go-to.btn_regular-disabled Перейти
+
+						+e.row_btn-load-more
+							+e.BUTTON(id="list-tickets__btn_load-more").btn_load-more.btn_load-more + Загрузить еще

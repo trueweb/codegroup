@@ -1,0 +1,27 @@
+.header
+	height: 140px
+	width: 100%
+	position: relative
+	display: flex
+	align-items: center
+	&__row
+		border: 1px solid $text-gray-light
+		padding: 18px
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&__col
+		display: flex
+		align-items: center
+		&_left
+			width: 25%
+			@media #{$phone}
+				flex: 1
+		&_center
+			flex: 1
+			@media #{$phone}
+				display: flex
+				justify-content: flex-end
+				width: 100%
+				order: 1
+				flex: none

@@ -1,0 +1,42 @@
+.tickets
+	&__list
+		&-item
+			display: flex
+			padding: 5px 10px
+			margin-bottom: 5px
+			cursor: pointer
+			&.active
+				background-color: #f8f8f8
+		&-col
+			&_1
+				height: 40px
+				width: 40px
+				margin-right: 10px
+				flex-shrink: 0
+				position: relative
+			&_2
+				flex: 1
+			&_3
+				display: flex
+				align-items: center
+		&-box-img
+			overflow: hidden
+			border-radius: 50%
+		&-row
+			&_1
+				display: flex
+		&-name
+			margin-right: 10px
+		&-text
+			color: $text-gray-dark
+			font-size: 12px
+		&-count
+			color: #000
+			font-size: 10px
+			background-color: #f8f8f8
+			border-radius: 50%
+			display: flex
+			justify-content: center
+			align-items: center
+			height: 20px
+			width: 20px

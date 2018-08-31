@@ -1,0 +1,26 @@
+mixin b-header()
+	+b.HEADER.header
+		.container
+			+e.row
+				+e.col_left
+					+b.A(href="/").logo
+						+e.IMG(src="img/logo.png").img
+						
+				+e.col_center
+					+b.BUTTON.btn_burger-header(id="btn_burger-header" data-id-control="nav__header")
+						+e.item
+					+b.NAV.nav(class="_header" id="nav__header")
+						+e.UL.list#nav-list_header
+							+e.LI.list-item
+								+e.A.list-link(href="#") Новости
+							+e.LI.list-item
+								+e.A.list-link(href="#") Помощь
+							+e.LI.list-item
+								+e.A.list-link(href="#") Контакты
+
+				+e.col_right
+					+b.user-bar_header
+						+e.I.btn_notification.active.fa.fa-bell-o
+						+e.I.btn_settings.fa.fa-cog
+						+e.SPAN.btn_user
+							+e.IMG(src="img/avatar-photo-1.png").btn-img

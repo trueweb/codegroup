@@ -1,0 +1,115 @@
+.list-tickets
+	&__title
+		font-size: 30px
+		margin-bottom: 10px
+		color: $corp-1
+		font-weight: 500
+	&__row
+		&_header
+			display: flex
+			margin-bottom: 25px
+			border-bottom: 1px solid $text-gray-light
+			padding: 20px 
+			color: $text-gray-list-tickets
+			@media #{$tablet}
+				display: none
+		&_btn-load-more
+			display: flex
+			justify-content: center
+	&__col
+		padding-left: 22px
+		@media #{$tablet}
+			br
+				display: none
+		&_time
+			width: 110px
+			flex-shrink: 0
+			@media #{$tablet}
+				width: 100%
+				margin-bottom: 15px
+		&_type
+			width: 160px
+		&_ticket
+			width: 320px
+			padding-left: 40px
+		&_conditions
+			width: 150px
+			padding-left: 0
+		&_view
+			width: 100px
+			flex-shrink: 0
+			flex: 1
+			text-align: center
+	&__list-item
+		display: flex
+		border: 1px solid $text-green
+		margin-bottom: 20px
+		box-shadow: 0 15px 15px 0 rgba($text-gray-light, 0.9)
+		padding: 20px 15px
+		@media #{$tablet}
+			flex-direction: column
+		&_disabled
+			border: 1px solid $text-gray-light-2
+			.list-tickets__btn
+				visibility: hidden
+		&-box
+			border-left: 1px solid $text-gray-light
+			border-right: 1px solid $text-gray-light
+			padding: 0 20px
+			@media #{$phone}
+				padding: 0
+				border: 0
+			&-row
+				display: flex
+				@media #{$tablet}
+					justify-content: space-between
+				@media #{$phone}
+					flex-direction: column
+		&-col
+			@media #{$tablet}
+				margin-bottom: 10px
+			&_time
+				width: 110px
+				flex-shrink: 0
+				@media #{$tablet}
+					margin-bottom: 10px
+			&_type
+				width: 160px
+			&_ticket
+				width: 300px
+				padding-left: 20px
+			&_conditions
+				width: 150px
+			&_view
+				width: 100px
+				flex-shrink: 0
+				text-align: center
+				@media #{$tablet}
+					width: 100%
+			&_text
+				width: 100%
+				margin-top: 15px
+				padding: 20px
+				border: 1px solid $text-gray-light
+				color: $text-gray-list-tickets
+			@media #{$tablet}
+				width: 100%
+			@media #{$phone}
+				text-align: center
+				padding: 0
+	&__ticket
+		display: flex
+		@media #{$phone}
+			justify-content: center
+			text-align: left
+		&-box-img
+			height: 40px
+			width: 40px
+			flex-shrink: 0
+			border-radius: 50%
+			margin-right: 10px
+		&-text
+			overflow-wrap: break-word
+			&_user
+				font-style: italic
+				color: $text-gray-list-tickets

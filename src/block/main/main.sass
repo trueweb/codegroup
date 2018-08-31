@@ -1,0 +1,20 @@
+.main
+	margin-bottom: 20px
+	&__row
+		display: flex
+		@media #{$pc}
+			flex-wrap: wrap
+	&__col
+		&_sidebar-left,
+		&_sidebar-right
+			width: 22%
+			flex-shrink: 0
+		&_content
+			min-height: calc(100vh - 140px)
+			flex: 1
+			padding: 15px
+		@media #{$pc}
+			width: 100%
+	
+	&_training
+		margin-bottom: 0

@@ -1,0 +1,124 @@
+.training
+	padding: 30px
+	height: calc(100vh)
+	@media (max-height: 970px), (max-width: 1000px)
+		height: auto
+		padding: 20px
+	&__box
+		&-out
+			height: 100%
+			border: 1px solid $text-gray-light
+			padding: 30px
+			@media #{$phone}
+				padding: 0
+		&-inner
+			width: 100%
+			display: flex
+			justify-content: space-between
+			align-items: center
+			flex-direction: column
+			background-image: url(../img/bg-training.png)
+			background-size: 100% 100%
+			//background: linear-gradient(45deg, #283149, #516295)
+			height: 100%
+			padding: 60px 0
+	&__row
+		margin-bottom: 15px
+		display: flex
+		justify-content: center
+		width: 100%
+		&_manual-book
+			background-image: url(../img/bg-book.png)
+			background-size: cover
+			background-repeat: no-repeat
+			height: 500px
+			@media (max-width: 1300px)
+				background-image: none
+				height: auto
+	&__logo
+		max-width: 280px
+		&-img
+			max-width: 100%
+	&__box-manual-book
+		width: 100%
+		max-width: 960px
+		display: flex
+		justify-content: space-around
+		padding-top: 50px
+		@media #{$tablet}
+			flex-direction: column
+			align-items: center
+	&__text
+		&_manual
+			max-width: 720px
+			color: #ffffff
+			font-size: 24px
+			font-weight: 700
+			padding: 30px
+			text-align: center
+			box-shadow: 0 5px 30px rgba(0,0,0,0.3)
+			//background: linear-gradient(45deg, #283149, #516295)
+			background-image: url(../img/bg-training-center.png)
+			background-size: 100% 100%
+			margin-bottom: 30px
+			@media #{$phone}
+				font-size: 14px
+				padding: 10px
+		&_manual-book
+			margin-top: 20px
+			color: #ffffff
+			font-weight: 500
+			font-size: 14px
+			padding: 30px
+			max-width: 380px
+			@media (max-width: 1300px)
+				color: #ffffff
+				padding: 30px
+				box-shadow: 0 5px 30px rgba(0,0,0,0.2)
+			@media #{$tablet}
+				margin-bottom: 20px
+			@media #{$phone}
+				text-align: center
+	&__form
+		max-width: 450px
+		width: 100%
+		&-item
+			position: relative
+			&::after
+				content: "\f111"
+				position: absolute
+				font-family: FontAwesome
+				right: 0
+				top: 10px
+				color: $text-green
+				font-size: 10px
+		&-field
+			padding: 5px 0
+			border: 0
+			border-bottom: 1px solid $text-gray-light
+			width: 100%
+			background-color: transparent
+			color: #ffffff
+			margin-bottom: 30px
+			&::placeholder
+				color: #ffffff
+		&-btn
+			text-shadow: #fff 1px 1px 0
+			display: flex
+			align-items: center
+			max-width: 444px
+			width: 100%
+			height: 106px
+			font-size: 16px
+			font-weight: bold
+			color: #555556
+			border-radius: 15px
+			background-image: url(../img/bg-1.png)
+			background-size: cover 
+			padding: 10px 50px
+			text-align: center
+			box-shadow: 0 10px 40px rgba(0,0,0,0.5)
+			@media #{$phone}
+				padding: 10px
+			&:focus
+				outline: none
